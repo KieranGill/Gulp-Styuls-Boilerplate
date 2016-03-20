@@ -1,0 +1,77 @@
+@import 'nib'
+@import 'jeet'
+@import 'rupture'
+
+// MEDIA QUERY SIZES
+// Basic key sizes are defined in rupture
+rupture.scale = 0 320px 600px 800px 1050px
+rupture.scale-names = 'xs' 's' 'm' 'l' 'xl'
+
+
+/* Custom YUI2 Reset */
+* { margin:0;padding:0;box-sizing:border-box;outline: 0; }
+table { border-collapse:collapse;border-spacing:0; }
+fieldset,img { border:0; }
+address,caption,cite,code,dfn,em,strong,th,var { font-style:normal;font-weight:normal;}
+ol,ul { list-style:none; }
+caption,th { text-align:left; }
+h1,h2,h3,h4,h5,h6 { font-size:100%;font-weight:normal;}
+q:before,q:after { content:'';}
+a { text-decoration:none; }
+abbr,acronym { border:0;}
+/*input, textarea { -webkit-appearance: none; } ----  hidden for ols site- remove when styling reg flow pages*/
+header, article, section, nav, figure, aside, hgroup, footer { display:block; } // Only for HTML5
+html { font-size: 62.5%; }
+body, html { height:100%; }
+html, html a { -webkit-font-smoothing: antialiased !important; }
+select::-ms-expand { display: none; } // Remove default drop down style in IE
+/* Any text inside a paragraph should be formatted normally */
+span strong, p strong { font-weight: bold; }
+span em, p em { font-style: italic; }
+p strong em, p em strong { font-style: italic; font-weight:bold; }
+
+label
+	 font-size $size-14
+	 cursor pointer
+	 
+
+/*Removes Little crosses from search input types*/
+input[type=search]
+	&::-ms-clear
+	&::-ms-reveal
+		display none
+		width 0
+		height 0
+
+	&::-webkit-search-decoration
+	&::-webkit-search-cancel-button
+	&::-webkit-search-results-button
+	&::-webkit-search-results-decoration
+		display none
+
+		
+/* Clip method for hiding copy visually but keeping it exposed to assistive technology
+(http://snook.ca/archives/html_and_css/hiding-content-for-accessibility)*/
+.a11y
+	position absolute !important
+	height 1px
+	width 1px
+	overflow hidden
+	clip rect(1px, 1px, 1px, 1px)
+
+.hide
+	display none
+
+/*Responsive Flag - Only used for functionality to switch between breakpoints - Do not change styling on this as will affect JS Functionality*/
+#responsive-js-flag
+	position absolute
+	height 0
+	width 0
+	opacity 0
+	z-index 1 //is Mobile
+	+above('m')
+		z-index 2
+	+above('l')
+		z-index 3
+	+above('xl')
+		z-index 4

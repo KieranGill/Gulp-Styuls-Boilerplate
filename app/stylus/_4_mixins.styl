@@ -1,0 +1,65 @@
+// SPA ICONS MIXIN
+use-icon(c, f)
+
+    font-family "spa-icons" !important
+    content c
+    font-size f
+    font-style normal
+    font-weight normal
+    font-variant normal
+    text-transform none
+    speak none
+    line-height 1
+    -webkit-font-smoothing antialiased
+    -moz-osx-font-smoothing grayscale
+
+use-named-icon(name, fontSize)
+    use-icon($ + name, fontSize)
+
+
+dividing-line(color, vertical-spacing = $var-spacing-m, orientation = "bottom")
+    border-{orientation} 1px solid color
+    padding-{orientation} vertical-spacing
+    margin-{orientation} vertical-spacing
+
+resetDivider(orientation)
+    border-{orientation} none
+    padding-{orientation} 0
+    margin-{orientation} 0
+
+//TODO: ideally rename to make the difference between this and above clearer
+divider(color, vertical-spacing = $var-spacing-m, orientation = "bottom")
+    //Pass in colour, space between elements and whether line should appear on the top or bottom or element
+    dividing-line(color, vertical-spacing, orientation)
+    
+    if (orientation == "bottom")
+        //to do - maybe change to last of type to make this a bit nicer (should check more where used)
+        &:last-child
+           resetDivider(orientation)
+    if (orientation == "top")
+         &:first-of-type
+            resetDivider(orientation)
+
+h1()
+    font-size 34px
+    margin-bottom 26px
+    font-weight 300
+    +below('l')
+        font-size 30px
+        
+    +below('m')
+        font-size 22px
+        margin-bottom 14px
+    
+h2()
+    line-height 1.2em
+    margin-bottom 16px
+    font-weight 300
+    font-size 28px
+  
+    +below('l')
+        font-size 22px
+        margin-bottom 12px
+
+    +below('m')
+        font-size $size-18
