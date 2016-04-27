@@ -1,0 +1,35 @@
+//slick over ride
+.slick-slider
+
+	.slick-slide
+		
+		margin 0 20px
+
+		img
+
+			width 100%
+
+	.slick-next
+	.slick-prev
+		
+		font-size: 0
+		line-height: 0
+		@extend .button
+		@extend .button.nav-buttons
+		position absolute
+		top -52px
+		right 78px
+		
+	.slick-next
+
+		&:after
+			
+			use-icon('\4e', 20px)
+			
+	.slick-prev
+
+		right 136px
+		
+		&:after
+			
+			use-icon('\50', 20px)

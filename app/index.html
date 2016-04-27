@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>UX Developer | Kieran Gill</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,7 +12,10 @@
 
         <!-- FONTS -->
         <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+        <link rel="stylesheet" href="/css/fonts.css">
+        <link rel="stylesheet" href="/css/slick.css">
 
+        
         <link rel="stylesheet" href="/css/screen.css">
     </head>
     <body>
@@ -20,8 +23,250 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is My Gulp / Stylus Boilerplate.</p>
+        <header class="primary-header">
+            <div class="site-container">
+                <h1>KG</h1>
+                <button class="button menu nav-buttons">
+                    <span class="a11y">Toggle navigation</span>
+                </button>
 
+                <button class="button close nav-buttons">
+                    <span class="a11y">Close preview</span>
+                </button>
+            </div>
+        </header>
+        <div class="primary-navigation">
+            <div class="site-container">
+                <nav>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#about">About</a>
+                </nav>
+            </div>
+        </div>
+        <main class="main-site">
+            
+            <section class="header">
+                <div class="site-container">
+                    <div class="head-shot"></div>
+                    <h1>Kieran Gill</h1>
+                    <hr/>
+                    <h2>User Experience Designer / Developer</h2>
+                </div>
+            </section>
+
+            <section id="portfolio" class="portfolio">
+                <div class="site-container">
+                    <h1>My portfolio</h1>
+                    <hr/>
+                    <div>
+                    <article class="saleroom" data-preview="saleroom-design">
+                        <div></div>
+                        <h1>The Saleroom</h1>
+                        <ul>
+                            <li>Wire frames</li>
+                            <li>Mocks</li>
+                            <li>Designs</li>
+                            <li>Responsive</li>
+                            <li>HTML</li>
+                            <li>CSS3 (Stylus)</li>
+                            <li>JavaScript</li>
+                            <li>Jeet (grid)</li>
+                            <li>Rupture (Media Queries)</li>
+                        </ul>
+                    </article>
+
+                    <article class="white-label" data-preview="white-label-design">
+                        <div></div>
+                        <h1>White label</h1>
+                        <ul>
+                            <li>Single page app</li>
+                            <li>Responsive</li>
+                            <li>CSS3 (Stylus)</li>
+                            <li>JavaScript (Angular)</li>
+                            <li>Jeet (grid)</li>
+                            <li>Rupture (Media Queries)</li>
+                        </ul>
+                    </article>
+
+                    <article class="toolbox" data-preview="toolbox-design">
+                        <div></div>
+                        <h1>Toolbox CMS</h1>
+                        <ul>
+                            <li>Wire frames</li>
+                            <li>Mocks</li>
+                            <li>Designs</li>
+                            <li>HTML</li>
+                            <li>CSS3 (BootStrap)</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </article>
+
+                    <article class="xl-com" data-preview="xl-design">
+                        <div></div>
+                        <h1>XL.com</h1>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </article>
+
+                    <article class="travelcity" data-preview="travel-city-direct-design">
+                        <div></div>
+                        <h1>Travel City Direct</h1>
+                        <ul>
+                            <li>Wire frames</li>
+                            <li>Mocks</li>
+                            <li>Designs</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </article>
+
+                    <article class="kosmar" data-preview="kosmar-design">
+                        <div></div>
+                        <h1>Kosmar</h1>
+                        <ul>
+                            <li>Mocks</li>
+                            <li>Designs</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </article>
+
+                    <article class="freedom" data-preview="freedom-flights-design">
+                        <div></div>
+                        <h1>Freedom Flights</h1>
+                        <ul>
+                            <li>Wire frames</li>
+                            <li>Designs</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </article>
+
+                    <article class="xl-zone" data-preview="xlzone-design">
+                        <div></div>
+                        <h1>XL Zone</h1>
+                        <ul>
+                            <li>Mocks</li>
+                            <li>Designs</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="about">
+                <div class="site-container">
+                    <h1>About me</h1>
+                    <hr/>
+                    <div class="copy">
+                        <p>I am a highly competent and enthusiastic individual with a ‘can-do’ attitude. As an experienced web designer, I specialise in usability and accessibility, as well as UI/UX development.  My years of experience and keen eye for detail enable me to instantly identify improvements a client can make to their website to enable a positive experience for their customers.</p>
+                        <p>I am an ambitious individual who consistently works to a high standard and thrives to improve customer experiences hence my specialism in user friendliness, accessibility and responsive design. I strive to find ways to continuously improve and develop my skills to ensure my work is cutting edge.</p>
+                    </div>
+                    <div class="buttons">
+                        <a href="/download/cv-kieran-gill.pdf" class="button">Download my CV</a>
+                        <a href="mailto:contactme@kierangill.com" class="button">Email me</a>
+                    </div>
+                </div>
+            </section>
+
+            </div>
+        </main>
+
+
+        <section class="previews">
+            <div class="site-container">
+                <article class="saleroom-design preview-box">
+                    <div class="preview-text">
+                        <h1>The-Saleroom | ATG Medias flagship portal</h1>
+                    </div>
+                    <div class="preview-images">
+                        <img src="/images/sr-slide-001.jpg" />
+                    </div>
+                </article>
+
+
+                <article class="white-label-design preview-box">
+                    <div class="preview-text">
+                        <h1>White Label | Single page app for auctioneers</h1>
+                    </div>
+                    <div class="preview-images">
+                        <img src="/images/wl-slide-001.jpg" />
+                    </div>
+                </article>
+
+
+                <article class="toolbox-design preview-box">
+                    <div class="preview-text">
+                        <h1>Gap Toolbox | Bespoke Auction CMS</h1>
+                    </div>
+                    <div class="preview-images">
+                        <img src="/images/tb-slide-001.jpg" />
+                    </div>
+                </article>
+
+                <article class="xl-design preview-box">
+                    <div class="preview-text">
+                        <h1>XL.com | Package Holiday Tour Operator</h1>
+                    </div>
+                    <div class="preview-images">
+                        <img src="/images/xl-slide-001.jpg" />
+                    </div>
+                </article>
+
+
+                <article class="travel-city-direct-design preview-box">
+                    <div class="preview-text">
+                        <h1>Travel City Direct | Florida Holiday Tour Operator</h1>
+                    </div>
+                    <div class="preview-images">
+                        <img src="/images/tcd-slide-001.jpg" />
+                    </div>
+                </article>
+
+
+                <article class="kosmar-design preview-box">
+                    <div class="preview-text">
+                        <h1>Kosmar | Holiday Tour Operator</h1>
+                    </div>
+                    <div class="preview-images">
+                        <img src="/images/kos-slide-001.jpg" />
+                    </div>
+                </article>
+
+
+                <article class="freedom-flights-design preview-box">
+                    <div class="preview-text">
+                        <h1>Freedom Flights | Flight Operator</h1>
+                    </div>
+                    <div class="preview-images">
+                        <img src="/images/ff-slide-001.jpg" />
+                    </div>
+                </article>
+
+
+                <article class="xlzone-design preview-box">
+                    <div class="preview-text">
+                        <h1>XL Zone | Xl Leisure Group Intranet</h1>
+                    </div>
+                    <div class="preview-images">
+                        <img src="/images/xlzone-slide-001.jpg" />
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <a href="#" class="button back-to-top"></button>
+
+        <script   src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
+        <script type="text/javascript" src="/scripts/main.js"></script>
     </body>
 </html>

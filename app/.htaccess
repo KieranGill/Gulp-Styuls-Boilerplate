@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} !^www\.kierangill\.com [NC]
+RewriteRule ^(.*)$ http://www.kierangill.com/$1 [L,R=301]
+</IfModule>

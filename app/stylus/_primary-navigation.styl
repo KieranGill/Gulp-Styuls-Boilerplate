@@ -1,0 +1,39 @@
+.primary-navigation
+	
+	display none
+	background $color-dozy
+	
+	.preview-open &
+	.preview-open.main-menu-open &
+		
+		display none
+		
+	+above(m)
+	
+		display block
+
+	.main-menu-open &
+		
+		display block
+	
+	nav
+		
+		+above(m)
+		
+			position absolute
+			right 20px
+			top -54px
+			
+	a
+		
+		display block
+		padding 15px 0
+		color #fff
+
+		+above(m)
+	
+			background transparent
+			transition all $var-animation-timer ease-out
+			display inline-block
+			padding-left 20px
+			padding-right 20px

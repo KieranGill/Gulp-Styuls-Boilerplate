@@ -1,0 +1,349 @@
+.site-container
+	
+	max-width 1200px
+	min-width 320px
+	margin 0 auto
+	padding 0 20px
+	position relative
+
+.main-site
+	
+	cf()
+	
+	section
+		
+		padding-top 30px
+		padding-bottom 30px
+		
+		h1
+			
+			font-size 34px
+			margin-bottom 26px
+			font-weight 300
+			text-align center
+			text-transform uppercase
+			
+			+below('l')
+			
+				font-size 30px
+
+			+below('m')
+			
+				font-size 22px
+				margin-bottom 14px
+			
+		h2
+
+			line-height 34px
+			margin-bottom 16px
+			font-weight 300
+			font-size 28px
+			text-align center
+			text-transform uppercase
+
+			+below('l')
+			
+				font-size 22px
+				margin-bottom 12px
+				line-height 28px
+
+			+below('m')
+			
+				font-size $size-18
+				line-height 24px
+			
+		hr
+			
+			border none
+			border-top solid 2px
+			text-align center
+			max-width 400px
+			margin 25px auto 15px auto
+			position relative
+			color $color-rock
+			
+			&:after
+				
+				content ''
+				border 2px solid $color-rock
+				width 20px
+				height 20px
+				display block
+				margin 0 auto
+				background white
+				border-radius 50%
+				position relative
+				top -13px
+
+
+		&.header
+			
+			background $color-skye
+
+			h1
+				
+				font-size 40px
+				line-height 46px
+				margin-top 10px
+				color #fff
+				
+			h2
+			
+				font-size 25px
+				line-height 31px
+				color #fff
+				
+			hr
+				
+				color #fff
+			
+				&:after
+				
+					background $color-skye
+					border-color #fff
+
+		&.portfolio
+			
+			background $color-jesse
+			cf()
+
+			hr
+			
+				&:after
+				
+					background $color-jesse
+			
+		&.about
+			
+			background $color-pulp
+
+			hr
+			
+				&:after
+				
+					background $color-pulp
+					
+			p:last-of-type
+				
+				margin-bottom 30px
+
+			p
+				
+				+above(l)
+				
+					font-size $size-16
+
+			.copy
+	
+				+above(l)
+				
+					col(3/4)
+
+			.button
+				
+				width 100%
+				margin-bottom 20px
+				
+				&:last-of-type
+					
+					margin-bottom 50px
+
+				+between('m', 799px)
+			
+					col(1/2)
+					text-align center
+					
+					&:last-of-type
+					
+						margin-bottom 80px
+
+			.buttons
+				
+				+above(l)
+				
+					col(1/4)
+
+
+
+
+
+		article
+			
+			padding 10px 0
+			margin-bottom 10px
+			background #fff
+			border-radius 2px
+			box-shadow 0 1px 4px 0 rgba(0,0,0,0.14)
+			cursor pointer
+
+			div
+				
+				height 200px
+				
+			h1
+
+				font-size 20px
+				margin-top 10px
+				padding 0 10px
+
+			ul
+
+				font-size 18px
+				text-transform capitalize
+				padding 0 10px 20px 10px
+				text-align center
+				
+			li
+				
+				display inline
+				
+				&:after
+					
+					content ' | '
+					
+				&:last-of-type
+					
+					&:after
+					
+						content ''
+
+
+			+above(m)
+			
+				col(1/2, cycle: 2)
+				
+			+above(l)
+			
+				col(1/3, uncycle: 2, cycle: 3)			
+
+			&.kosmar
+				
+				div
+					
+					background-image url("/images/kosmar.jpg")
+					background-size 200% auto
+
+			&.freedom
+				
+				div
+					
+					background-image url("/images/freedom.jpg")
+					background-size 140% auto
+					background-position-x -120px
+					
+
+			&.xl-zone
+				
+				div
+					
+					background-image url("/images/xlzone.jpg")
+					background-size 170% auto
+
+
+			&.travelcity
+				
+				div
+					
+					background-image url("/images/tcd.jpg")
+					background-size 170% auto
+
+			&.xl-com
+				
+				div
+					
+					background-image url("/images/xl.jpg")
+					background-size 140% auto
+					background-position-x -15px
+					
+			&.saleroom
+				
+				div
+					
+					background-image url("/images/saleroom.jpg")
+					background-size 140% auto
+					
+
+			&.toolbox
+				
+				div
+					
+					background-image url("/images/toolbox.jpg")
+					background-size 140% auto
+					
+			&.white-label
+				
+				div
+					
+					background-image url("/images/whitelabel.jpg")
+					background-size 140% auto
+					
+
+
+
+
+.head-shot
+	
+	background-image url("/images/me.jpg")
+	height 160px
+	width 160px
+	margin 0 auto
+	border-radius 50%
+	background-size cover
+	
+
+
+.previews
+
+	display none
+
+.preview-open
+	
+	.previews
+		
+		display block
+		
+	main
+		
+		display none
+		
+	.preview-box
+		
+		display none
+		
+		&.open
+
+			display block
+			margin-top 30px
+			
+
+		.preview-text
+			
+			h1
+				
+				text-transform uppercase
+				margin-bottom 20px
+				
+			h2
+				text-transform uppercase
+				margin-bottom 10px
+				
+			p
+				margin-bottom 50px
+		
+			+above(m)
+			
+				col(1/3)
+				shift(2/3)
+			
+		.preview-images
+		
+			+above(m)
+
+				col(2/3)
+				shift(-1/3)
+			
+			img
+				
+				width 100%
+			
+

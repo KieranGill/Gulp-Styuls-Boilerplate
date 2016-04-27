@@ -1,0 +1,47 @@
+.primary-header
+	
+	background $color-rock
+	color #fff
+	padding 10px 0
+	position relative
+
+	h1
+		
+		font-size 30px
+		
+	button
+		
+		position absolute
+		right 20px
+		top -3px
+
+		&.menu
+			
+			&:after
+			
+				use-icon('\4d', 20px)
+
+			.main-menu-open &
+		
+				background $color-dozy
+
+			.preview-open &
+				
+				display none
+
+			+above(m)
+			
+				display none
+
+
+		&.close
+			
+			display none
+			
+			&:after
+			
+				use-icon('\58', 20px)
+			
+			.preview-open &
+		
+				display block
